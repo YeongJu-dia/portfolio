@@ -1,0 +1,754 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    border:1px solid red
+    /* background: #000; */
+}  
+body{ min-width: 320px; }
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.newfont{
+    font-family: 'Gothic A1', sans-serif;
+}
+h1, h2, .en2{
+    font-family: 'Martel', serif;
+}
+.en{
+    font-family: 'Pattaya', sans-serif;
+}
+.more{
+    font-family: 'Martel', serif; 
+}
+a:link, a:visited{
+    color: #000;}
+
+body{ 
+    min-width: 320px;
+    position: relative;}
+
+.inner{
+    width: 1080px;
+    margin: 0 auto;}
+
+.inner02{
+    width: 1000px;
+    margin: 0 auto;}
+    
+
+
+/*header*/
+.main{
+    /* height: 100vh; */
+    width: 100vw;
+}
+header{
+   height: 100px;
+   background: #000;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+header span.openm{
+    color: #abacac;
+    font-size: 2.3rem;
+    cursor: pointer;   
+    margin: 1.5rem;
+}
+
+header .logo{
+    background: url(../image/ana/logo_black.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+header .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 34, 59);
+    padding: 200px 400px;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    z-index: 1000;
+}
+
+header .menu.on{
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+header .menu ul li{
+    margin: 1.2rem 0 1.2rem 0;
+}
+header .menu ul li a{
+    color: #fff;
+    font-size: 2.6rem;
+    width: 100%;
+}
+
+header .menu ul li span{
+    color: #fff;
+    font-size: 3.3rem;
+    cursor: pointer;
+}
+
+header .menu ul li.bt {
+    position: fixed;
+    top: 50px;
+    right: 300px;
+    display: block;
+}
+
+header .menu ul li a:hover{
+    font-size: 3.1rem;
+    text-shadow: 4px 3px rgb(179, 179, 179, 0.5);
+}
+
+
+
+/*sec01 */
+.sec01{position: relative;}
+/* swipper */
+ .swiper-container.banner {
+  width: 100%;
+  height: 90vh;
+} 
+
+.swiper-slide.banner {
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide.banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+
+.swiper-slide.banner.vis01{
+    background: url(../image/ana/bg/sec01back6.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.swiper-slide.banner.vis01 .box .photo01{
+    background: url(../image/ana/BANNER/cd.jpg) 50% 50% no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.8);
+    margin: 0 1rem 1rem 0;
+}
+.swiper-slide.banner.vis01 .box .text span.newfont{
+    color: rgb(245, 245, 245);
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-shadow: 4px 3px 2px rgba(0,0,0,0.7);
+    padding-bottom:5px
+}
+.swiper-slide.banner.vis01 .box .text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.swiper-slide.banner.vis01 .box .text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.swiper-slide.banner.vis01 .box .text .newfont:nth-child(2){
+    padding-bottom: 30px;
+}
+.swiper-slide.banner.vis01 .box .text ul.newfont{
+    color: rgb(255, 255, 255);
+   text-shadow: 2px 3px 3px rgba(0,0,0,0.7);
+   padding-left: 20px;
+}
+.swiper-slide.banner.vis01 .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position:absolute;
+    top: 10rem;
+}
+
+
+.swiper-slide.banner.vis02{
+    background: url(../image/ana/bg/b6.jpg) 0% 0% no-repeat;
+    background-size: cover;
+    height: 100%;
+    /*display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;*/
+}
+.swiper-slide.banner.vis02 .photo02{
+    background: url(../image/ana/ALBUM/6.jpg) 50% 50% no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    box-shadow: -10px 10px rgba(255, 255, 255, 0.8);
+    margin: 1rem 1rem 1rem 0;
+}
+
+.swiper-slide.banner.vis02 .text.newfont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding:50px;
+    background: rgba(140, 159, 194, 0.5);
+}
+.swiper-slide.banner.vis02 .text.newfont span:first-child{
+font-weight:600;
+font-size: 1.1rem;
+padding-bottom: 10px;
+}
+
+.swiper-slide.banner.vis02 .text.newfont span:nth-child(2){
+    font-weight:900;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    }
+
+
+
+
+.swiper-slide.banner.vis03{
+    background: url(../image/ana/bg/00.jpg) 0% 0% no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.swiper-slide.banner.vis03 .en{
+   font-size: 6.5rem;
+   background: linear-gradient(to right, #C9FFBF, #FFAFBD);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   position: absolute;
+   top: 70%;
+   left: 7%;
+}
+.swiper-slide.banner.vis03 p{
+    position: absolute;
+    top: 85%;
+    left: 8%;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.swiper-slide.banner.vis03 p sup{
+    font-size: 1rem;
+    color: rgb(209, 238, 255);
+}
+
+
+
+
+
+
+
+/* sec02 */
+.sec02{
+    position: relative;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #eeeeee; */
+}
+
+.sec02 h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+
+
+
+.artists{
+    height: 670px;
+    position: relative;
+    /* top: -110px */
+}
+.box.b01 {
+    background: url(../image/ana/artists/a1.jpg) 50% 50% no-repeat;
+    background-size:cover;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+}
+.box.b02 {
+    background: url(../image/ana/artists/a2.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    left: 315px;
+}
+.box.b03 {
+    background: url(../image/ana/artists/a3.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 30px;
+    left:645px;
+}
+.box.b04 {
+    background: url(../image/ana/artists/01.jpg) 50% 100% no-repeat;
+    background-size: contain;
+    width:300px;
+    height: 200px;
+    position: absolute;
+    top: 205px;
+    right: 385px;
+}
+.box.b05 {
+    background: url(../image/ana/artists/a5.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 250px;
+    left: 120px;
+}
+.box.b06 {
+    background: url(../image/ana/artists/a6.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 410px;
+    left: 485px;
+}
+.box.b07 {
+    background: url(../image/ana/artists/a7.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    top: 410px;
+    left:315px;
+}
+.box.b08 {
+    background: url(../image/ana/artists/a8.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 360px;
+    left:620px;
+}
+.box.b09 {
+    background: url(../image/ana/artists/a9.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 205px;
+    left:620px;
+}
+.box.b10 {
+    background: url(../image/ana/artists/a10.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 445px;
+    left:190px;
+}
+.box.b11 {
+    background: url(../image/ana/artists/a11.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 80px;
+    left:520px;
+}
+.box.b12 {
+    background: url(../image/ana/artists/a12.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 205px;
+    left:775px;
+}
+.box:hover{
+    background-size: 110%;
+    transition: all 0.5s; 
+}
+
+.box p{
+    display: none;
+    color: #fff;
+    text-align: center;
+}
+.box.b01:hover p{
+    display: block;
+    height: 230px;
+    line-height:230px;
+    background: rgba(0,0,0,0.4);
+}
+.box.b02:hover p{
+    height: 200px;
+    line-height: 200px;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+.box.b03:hover p{
+    height: 170px;
+    line-height: 170px;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+.box.b09:hover p,.box.b12:hover p{
+    height: 150px;
+    line-height: 150px;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+.box.b04:hover p{
+    height: 200px;
+    line-height: 200px;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+.box.b05:hover p{
+    height: 190px;
+    line-height: 190px;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+}
+.box.b06:hover p{
+    height: 130px;
+    line-height: 130px;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+.box.b07:hover p{
+    height: 165px;
+    line-height: 165px;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+.box.b08:hover p{
+    height: 220px;
+    line-height: 220px;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+.box.b10:hover p, .box.b11:hover p{
+    height: 120px;
+    line-height: 120px;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
+.more a{
+    font-size: 1.2rem;
+    
+}
+.more{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.more::before{
+    content: "";
+    width: 50px;
+    height: 4px;
+    background:rgb(59, 110, 146);
+    position: absolute;
+    bottom: 0;
+}
+.more:hover::before{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background:rgb(59, 110, 146);
+    position: absolute;
+    transition: width 0.3s;
+}
+
+
+
+
+
+/*sec03*/
+.sec03{
+    background: url(../image/ana/sec03back.jpg) 80% 100% no-repeat;
+    background-size: cover;
+    /* padding: 60px 0 150px 0; */
+    width: 100%;
+    height: 800px;
+}
+
+.sec03 .inner h2{
+    font-size: 70px;
+    padding-top: 100px;
+}
+.swiper-container.alb {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide.alb {
+    background-position: center;
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+
+
+  /*sec04*/
+   .sec04 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items:center;
+      justify-content: center;
+      height: 900px;
+
+  }
+.sec04 h2{
+      font-size: 3rem;
+      text-align: center;
+  }
+.sec04 .right h2{
+    color: rgb(243, 243, 243);
+}
+.sec04 .boxright{
+    margin-left: 50px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 400px;
+    height: auto;
+    border: 1px solid rgb(119, 151, 173);
+}
+
+#calendar{
+      width: 550px;
+      height: 600px;
+      border:1px solid rgb(185, 185, 185);
+      padding: 10px;
+  }
+
+.list{
+    display: flex;
+    flex-direction: row;
+    /* padding: 10px; */
+}
+.list span{
+    width: 340px;
+    font-size: 0.9rem;
+}
+h4{
+    width: 60px;
+    font-size: 1.1rem;
+    color: rgb(212, 102, 28);
+}
+.list:hover{
+background: rgb(202, 220, 233);
+}
+
+
+
+
+
+/*sec05*/
+.sec05{
+    padding: 0px 0 80px 0;
+}
+
+
+.sec05 .tab{
+    width: 100%;
+    position: relative;
+}
+.sec05 .tab ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sec05 .tab ul li{
+    height: 100px;
+    line-height: 100px;
+    padding: 0px 40px;
+    margin: 0 0 0 2px;
+    /* font-weight: 800; */
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 3px 4px rgba(136, 136, 136, 0.5);
+    position: relative;
+    cursor: pointer;
+}
+.sec05 .tab ul li:first-child{ margin: 0; }
+.sec05 .tab ul li.on{ 
+    /* border: 1px solid rgb(0, 34, 59, 0.5); */
+    border-bottom: #fff;
+}
+.sec05 .tab ul li:hover::after,
+.sec05 .tab ul li.on::after{
+    width: 100%;
+    height: 5px;
+    background: rgb(0, 34, 59);
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+.sec05 .tab ul li:hover::after{ background: rgb(59, 110, 146); }
+.sec05 .tab .conBox{
+    display: none;
+    width: 100%;
+    height: 400px;
+    /* background:rgb(248, 248, 248); */
+    padding: 40px;
+    color: #333;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* border: 1px solid rgb(0, 34, 59, 0.5); */
+  
+}
+.sec05 .tab .conBox.on{ display:block; 
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+
+.sec05 .tb{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(0, 34, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.sec05 h3{
+    text-align: center;
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+}
+.sec05 p{
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.sec05 #con2 p{
+    text-align:start;
+    font-size: 0.7rem;
+}
+
+.sec05 .tb:hover{
+    background: rgba(0, 0, 0);
+}
+.sec05 .tb:hover p, .sec05 .tb:hover h3{
+    color: #fff;
+}
+
+
+footer{
+    background: rgb(39, 39, 39);
+    height: 200px;
+    color: rgb(226, 226, 226);
+    padding-top: 20px;
+}
+footer .inner .logo{
+    background: url(../image/ana/logo_black.png) 50% 50% no-repeat;
+    width: 200px;
+    height: 50px;
+    background-size: contain;
+}
+footer .inner .sns a i{
+    font-size: 1.7rem;
+    margin-left: 20px;
+    color: rgb(226, 226, 226);
+}
+footer .inner .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .inner div{
+    padding-bottom: 5px;
+}
+footer .inner div span{
+    padding-right: 10px;
+}
+
+
+
+@media all and (max-width: 767px) {
+    body{
+        background: #fff;
+        min-width: 320px;
+    }
+}
+@media (min-width:768px) and (max-width: 1079px) {
+    body{
+        background: #fff;
+        min-width: 768px;
+    }
+}   
