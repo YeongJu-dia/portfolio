@@ -67,7 +67,7 @@ header .topnav{
 }
 
 .mobinav a.logo{
-    background: url(/image/SeMA/logo2.png) 50% 50% no-repeat;
+    background: url(../image/SeMA/logo2.png) 50% 50% no-repeat;
     width: 40%;
     height: 40px;
     background-size: contain;
@@ -91,7 +91,7 @@ header .topnav{
 .gnb.on{  display: inline-block;}
 .gnb>a{display: none;}
 .gnb .logo{
-    background: url(/image/SeMA/logo2.png) 50% 50% no-repeat;
+    background: url(../image/SeMA/logo2.png) 50% 50% no-repeat;
     width: 350px;
     height: 60px;
     background-size: contain;
@@ -210,7 +210,7 @@ h1{
     font-size: 2rem;
     text-align: center;
     padding: 10% 0 ;
-    background: url(/image/SeMA/sub2/top.jpg) 50% 20% no-repeat;
+    background: url(../image/SeMA/sub2/top.jpg) 50% 20% no-repeat;
     background-size: cover;
     margin: 8% 0 10% 0;
 }
