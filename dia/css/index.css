@@ -134,7 +134,7 @@ span, .text h1{
     padding:0 0 10px 0;
 }
 .section.two{
-  background: url(/image/index/museum2.png) 50% 50% no-repeat;
+  background: url(../image/index/museum2.png) 50% 50% no-repeat;
   background-size: cover;
 }
 
